@@ -1,17 +1,14 @@
 package datastructures.linkedlist;
 
-public class Node<Z> {
+public class Node {
 
-  public Z currentNodeValue;
-  public Node<Z> next = null;
+ public  String value;
+ public Node next = null;
 
-  public Node(Z currentNodeValue) {
-    this.currentNodeValue = currentNodeValue;
+  public Node(String nodeValue) {
+    value = nodeValue;
   }
 
-  //Empty linked list
-  public Node(){
-
-  }
+  //Empty linked lis
 
 }

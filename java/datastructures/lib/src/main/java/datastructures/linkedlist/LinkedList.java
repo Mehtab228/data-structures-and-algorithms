@@ -1,24 +1,25 @@
 package datastructures.linkedlist;
 
-public class LinkedList<Z>
+public class LinkedList
 {
-  public Node<Z> head = null;
+  public Node head = null;
   private int sizeOfList = 0;
+  public LinkedList(){}
 
-public void insert(Z value) {
+public void insert(String value) {
   // 3 steps, 1. Create new node with the value, set the previous head to be next, set the head to be the value passed in (newHead)
-  Node<Z> newHead = new Node<>(value);
+  Node newHead = new Node(value);
   newHead.next = head;
   head = newHead;
   sizeOfList++;
 }
 
-public boolean includes(Z value) {
-  Node<Z> currentHead = head;
-  while (currentHead != null) {
-    if (currentHead.equals(value))
+public boolean includes(String value) {
+  Node current = head;
+  while (current.next != null) {
+    if (current.next.equals(value))
       return true;
-      currentHead = currentHead.next;
+      current = current.next;
   }
   return false;
 }
@@ -26,12 +27,13 @@ public boolean includes(Z value) {
   @Override
   public String toString()
     {
-      String output = "";
-      Node<Z> current = head;
+      StringBuilder newStr = new StringBuilder();
+      Node current = head;
       while(current != null) {
-        output += "{" + " " + current.currentNodeValue + " " + "} ->";
+        newStr.append("{" + " " + current.value+ " " + "} ->");
         current = current.next;
       }
-        return output + "null";
+        newStr.append("NULL");
+      return  newStr.toString();
     }
 }
