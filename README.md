@@ -21,3 +21,15 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+##Table of Contents
+
+[Reverse Arrays](https://github.com/Mehtab228/data-structures-and-algorithms/tree/main/array-reverse)
+
+[Binary Search](https://github.com/Mehtab228/data-structures-and-algorithms/tree/main/binarySearch)
+
+[Insert Middle](https://github.com/Mehtab228/data-structures-and-algorithms/tree/main/insert-middle)
+
+[Linked List 1](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/linkedlist/LinkedList.java)
+
+[Linked List 2](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/linkedlist/LinkedList.java)
