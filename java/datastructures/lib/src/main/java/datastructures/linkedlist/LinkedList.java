@@ -36,4 +36,41 @@ public boolean includes(String value) {
         newStr.append("NULL");
       return  newStr.toString();
     }
+
+    public void append(String value) {
+      Node current = head;
+      while(current.next != null) {
+        current = current.next;
+      }
+      Node newNode = new Node(value);
+      current.next = newNode;
+    }
+
+    public void insertBefore(String searchValue, String addValue) {
+      Node current = head;
+      while(current != null) {
+        if (current.next.value == searchValue) {
+          Node newNode = new Node(addValue);
+          newNode.next = current.next;
+          current.next = newNode;
+          return;
+        }
+        current = current.next;
+      }
+      System.out.println("Search Value not found");
+    }
+
+  public void insertAfter(String searchValue, String addValue){
+    Node current = head;
+    while(current != null){
+      if (current.value == searchValue){
+        Node newNode = new Node(addValue);
+        newNode.next = current.next;
+        current.next = newNode;
+        return;
+      }
+      current = current.next;
+    }
+    System.out.println("Search value not found");
+  }
 }
