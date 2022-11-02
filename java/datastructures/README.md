@@ -16,4 +16,4 @@ kthFromEnd(k)
 
 returns value at index k from tail
 
-!(image)[./LinkedList.png]
+![image](./LinkedList.png)
