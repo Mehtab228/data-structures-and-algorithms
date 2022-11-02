@@ -34,5 +34,5 @@ To run your tests
 
 [Linked List 2](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/linkedlist/LinkedList.java)
 
-[Linked List 3](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/linkedlist/LinkedList.java)
+[Linked List 3](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/README.md)
 
