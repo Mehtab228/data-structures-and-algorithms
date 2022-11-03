@@ -8,25 +8,25 @@ public class LinkedListTest
 {
   @Test void createEmptyLinkedList()
   {
-    LinkedList emptyLL = new LinkedList();
+    LinkedList<Number> emptyLL = new LinkedList<Number>();
     assertTrue(emptyLL.head == null);
   }
 
   @Test void insertIntoLinkedList()
   {
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("I am Here");
     assertTrue(linked.head.value == "I am Here");
   }
 
   @Test void headPointsToNext()
   {
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("I am Here");
     assertTrue(linked.head.next == null);
   }
   @Test void insertMultipleNodes(){
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("I am Here");
     linked.insert("Wow!");
     assertTrue(linked.head.next.value == "I am Here");
@@ -34,14 +34,14 @@ public class LinkedListTest
 
 
   @Test void didNotToFindValue(){
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("I am here");
     linked.insert("Wow");
     assertFalse(linked.includes("not here"));
   }
 
   @Test void insertAtEnd(){
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("I");
     linked.insert("did");
     linked.append("add");
@@ -50,7 +50,7 @@ public class LinkedListTest
   }
 
   @Test void insertMultipleAtEnd(){
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("Hey");
     linked.insert("I!");
     linked.append("added");
@@ -61,7 +61,7 @@ public class LinkedListTest
     assertEquals(linked.toString(), expected);
   }
   @Test void insertBeforeMiddle(){
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("I");
     linked.append("added");
     linked.append("in");
@@ -70,7 +70,7 @@ public class LinkedListTest
     assertEquals(linked.toString(), expected);
   }
   @Test void insertAfterTheMiddle(){
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("I");
     linked.append("added");
     linked.append("in");
@@ -80,7 +80,7 @@ public class LinkedListTest
   }
 
   @Test void insertAfterTheEnd(){
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("I");
     linked.append("added");
     linked.append("in");
@@ -88,76 +88,38 @@ public class LinkedListTest
     String expected = "{ I } ->{ added } ->{ in } ->NULL";
     assertEquals(linked.toString(), expected);
   }
-  @Test
-  void kthFromEndHappyPath() {
-    LinkedList linked = new LinkedList();
-    linked.insert("potato");
-    linked.insert("tomato");
-    linked.insert("cucumber");
-    linked.insert("onion");
-    linked.insert("leek");
-    linked.insert("broccoli");
-    linked.insert("cabbage");
-    assertEquals("onion", linked.kthFromEnd(3));
-  }
-
-  @Test
-  void kthFromEndZero() {
-    LinkedList linked = new LinkedList();
-    linked.insert("potato");
-    linked.insert("tomato");
-    linked.insert("cucumber");
-    linked.insert("onion");
-    linked.insert("leek");
-    linked.insert("broccoli");
-    linked.insert("cabbage");
-    assertEquals("potato", linked.kthFromEnd(0));
-  }
 
   @Test
   void kthEqualToLLLength() {
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("potato");
     linked.insert("tomato");
     linked.insert("cucumber");
-    linked.insert("onion");
-    linked.insert("leek");
-    linked.insert("broccoli");
-    linked.insert("cabbage");
-    assertEquals("cabbage", linked.kthFromEnd(6));
+    linked.insert("batman");
+    assertEquals("batman", linked.kthFromEnd(3));
   }
 
   @Test
   void kthFromEndNegative() {
-    LinkedList linked = new LinkedList();
+    LinkedList<Number> linked = new LinkedList<Number>();
     linked.insert("potato");
     linked.insert("tomato");
-    linked.insert("cucumber");
-    linked.insert("onion");
-    linked.insert("leek");
-    linked.insert("broccoli");
-    linked.insert("cabbage");
     assertThrows(IllegalArgumentException.class, () -> linked.kthFromEnd(-3));
   }
 
   @Test
   void kthLargerThanLLLength() {
-    LinkedList linked = new LinkedList();
-    linked.insert("potato");
-    linked.insert("tomato");
-    linked.insert("cucumber");
-    linked.insert("onion");
-    linked.insert("leek");
-    linked.insert("broccoli");
-    linked.insert("cabbage");
-    assertThrows(NullPointerException.class, () -> linked.kthFromEnd(7));
+    LinkedList<Number> linked = new LinkedList<Number>();
+    linked.insert("batman");
+    linked.insert("superman");
+    assertThrows(NullPointerException.class, () -> linked.kthFromEnd(2));
   }
 
   @Test
   void kthFromEndTinyLL() {
-    LinkedList linked = new LinkedList();
-    linked.insert("potato");
-    assertEquals("potato", linked.kthFromEnd(0));
+    LinkedList<Number> linked = new LinkedList<Number>();
+    linked.insert("batman");
+    assertEquals("batman", linked.kthFromEnd(0));
     assertThrows(NullPointerException.class, () -> linked.kthFromEnd(1));
   }
 }

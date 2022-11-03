@@ -1,7 +1,6 @@
 package datastructures.linkedlist;
 
-public class LinkedList
-{
+public class LinkedList<I extends Number> {
   public Node head = null;
   private int sizeOfList = 0;
   public LinkedList(){}
@@ -91,4 +90,23 @@ public boolean includes(String value) {
     if(i-k < 0) throw new IllegalArgumentException("Input exceeds linked list length.");
     return rear.value;
   }
+
+  public LinkedList<Integer> zipLists(LinkedList<Number> list1, LinkedList<Integer> list2) {
+    if(list1.sizeOfList < 1)
+      return list2;
+    if(list2.sizeOfList < 1)
+      return list1;
+    LinkedList<Integer> output = new LinkedList<>();
+    int position = 0;
+    while(position < list1.sizeOfList || position < list2.sizeOfList) {
+      if(position < list1.sizeOfList)
+        output.append(list1.kthFromEnd(list1.sizeOfList - position - 1));
+      if(position < list2.sizeOfList)
+        output.append(list2.kthFromEnd(list2.sizeOfList - position - 1));
+      position++;
+    }
+    return output;
+  }
+
+
 }
