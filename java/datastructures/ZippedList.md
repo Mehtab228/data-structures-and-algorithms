@@ -1,6 +1,8 @@
 # Challenge 08 
 ![image](./ZippedList.png)
 
+![image](./Screen Shot 2022-11-02 at 6.54.32 PM.png)
+
 ## Problem Domain
 
 - Write a function called zip lists
