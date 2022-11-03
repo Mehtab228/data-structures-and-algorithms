@@ -1,5 +1,5 @@
 # Challenge 08 
-!(Image)[./LinkedList.png]
+!(Image)[./ZippedList.png]
 
 ## Problem Domain
 
