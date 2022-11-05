@@ -9,10 +9,14 @@ public class Stack<T> {
   }
 
   public void push(T value) {
-    Node<T> newTop = new Node<>();
+    if(top !=null){
+    Node<T> newTop = new Node<>(value);
     newTop.next = top;
     top = newTop;
     size++;
+    } else {
+      top = new Node<>(value);
+    }
   }
 
   public T pop() throws NullPointerException{

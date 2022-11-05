@@ -1,7 +1,8 @@
-package StacksandQueues;
+package datastructures.linkedlist.StacksandQueues;
 import datastructures.StackandQueue.Stack;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
@@ -11,6 +12,6 @@ public class StackandQueueTest {
   void pushOntoStack(){
     Stack<String> sut = new Stack<>();
     sut.push("potato");
-    assertTrue (sut.size() == 1);
+    assertTrue(sut.peek() == ("potato"));
   }
 }
