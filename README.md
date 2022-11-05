@@ -36,3 +36,5 @@ To run your tests
 
 [Linked List 3](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/README.md)
 
+[Zipped List](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/ZippedList.md)
+
