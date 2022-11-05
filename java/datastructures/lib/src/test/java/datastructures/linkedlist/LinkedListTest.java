@@ -1,5 +1,6 @@
 package datastructures.linkedlist;
 
+import datastructures.StackandQueue.Stack;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -122,4 +123,5 @@ public class LinkedListTest
     assertEquals("batman", linked.kthFromEnd(0));
     assertThrows(NullPointerException.class, () -> linked.kthFromEnd(1));
   }
+
 }

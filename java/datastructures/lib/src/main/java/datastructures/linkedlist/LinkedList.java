@@ -95,7 +95,7 @@ public boolean includes(String value) {
     if(list1.sizeOfList < 1)
       return list2;
     if(list2.sizeOfList < 1)
-      return list1;
+      return list2;
     LinkedList<Integer> output = new LinkedList<>();
     int position = 0;
     while(position < list1.sizeOfList || position < list2.sizeOfList) {

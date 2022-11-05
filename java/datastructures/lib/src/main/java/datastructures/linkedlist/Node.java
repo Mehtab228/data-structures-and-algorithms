@@ -1,6 +1,6 @@
 package datastructures.linkedlist;
 
-public class Node {
+public class Node<T> {
 
  public  String value;
  public Node next = null;
