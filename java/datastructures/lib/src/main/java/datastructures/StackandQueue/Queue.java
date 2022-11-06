@@ -16,12 +16,11 @@ public class Queue<T> {
     public void enqueue(T value){
       Node<T> newNode= new Node<>(value);
       if(size == 0){
-        front = newNode;
+        this.front = newNode;
       } else {
-      newNode = back.next;
-      back = newNode;
-      size++;
+      this.back = newNode;
       }
+      size++;
     }
 
     public T dequeue() throws NullPointerException{

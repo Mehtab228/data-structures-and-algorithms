@@ -16,6 +16,7 @@ public class Stack<T> {
     size++;
     } else {
       top = new Node<>(value);
+      size++;
     }
   }
 
