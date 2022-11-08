@@ -88,5 +88,4 @@ public class StackandQueueTest {
     assertThrows(NullPointerException.class, () -> sut.dequeue());
   }
 
-
 }
