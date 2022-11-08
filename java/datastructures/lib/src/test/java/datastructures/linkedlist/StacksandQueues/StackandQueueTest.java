@@ -1,4 +1,5 @@
 package datastructures.linkedlist.StacksandQueues;
+import datastructures.StackandQueue.PseudoQueue;
 import datastructures.StackandQueue.Queue;
 import datastructures.StackandQueue.Stack;
 import org.junit.jupiter.api.Test;
@@ -87,5 +88,17 @@ public class StackandQueueTest {
     sut.dequeue();
     assertThrows(NullPointerException.class, () -> sut.dequeue());
   }
+  @Test
+  void testPseudoEnqueue() {
+    PseudoQueue sut = new PseudoQueue();
+    sut.enqueue("the");
+    assertEquals("the", sut.back.peek());
+  }
 
+  @Test
+  void testPseudoDequeue() {
+    PseudoQueue sut = new PseudoQueue();
+    sut.enqueue("the");
+    assertEquals("the", sut.dequeue());
+  }
 }
