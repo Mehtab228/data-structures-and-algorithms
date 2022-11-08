@@ -40,3 +40,5 @@ To run your tests
 
 [Stacks and Queues](https://github.com/Mehtab228/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/StackandQueue)
 
+[Pseudo Queue](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/PseudoQueue.md)
+
