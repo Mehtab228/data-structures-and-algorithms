@@ -44,3 +44,5 @@ To run your tests
 
 [Animal Shelter](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/AnimalShelter.md)
 
+[Bracket Checker](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/Bracket.md)
+
