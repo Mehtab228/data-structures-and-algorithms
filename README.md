@@ -42,3 +42,5 @@ To run your tests
 
 [Pseudo Queue](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/PseudoQueue.md)
 
+[Animal Shelter](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/AnimalShelter.md)
+
