@@ -48,3 +48,5 @@ To run your tests
 
 [Trees](https://github.com/Mehtab228/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/trees)
 
+[Find Max of Tree](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/FindMax.md)
+
