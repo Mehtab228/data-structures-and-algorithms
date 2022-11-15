@@ -1,5 +1,5 @@
 # Get Max
-![image](./GetMax.png)
+![image](./FindMax.png)
 
 ## Write a method extending Binary Trees that returns the maximum value in a binary tree.
 
