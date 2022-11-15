@@ -193,4 +193,30 @@ public class TreeTests {
     sut.root = a;
     assertEquals(sut.max(), 7);
   }
+
+  @Test
+  void test_breadthfirsttraversal() {
+    BinaryTree<String> sut = new BinaryTree<>();
+    Node<String> a = new Node<>("A");
+    Node<String> b = new Node<>("B");
+    Node<String> c = new Node<>("C");
+    Node<String> d = new Node<>("D");
+    Node<String> e = new Node<>("E");
+    Node<String> f = new Node<>("F");
+    Node<String> g = new Node<>("G");
+    a.left = b;
+    a.right = c;
+    b.left = d;
+    b.right = e;
+    c.left = f;
+    c.right = g;
+    sut.root = a;
+    //              (A)
+    //             /   \
+    //          (B)     (E)
+    //         /   \   /   \
+    //       (C)  (D) (F)  (G)
+    String [] test = {"A", "B"};
+    assertArrayEquals(test, sut.breadthFirstTraversal());
+  }
 }
