@@ -167,4 +167,30 @@ public class TreeTests {
     String[] test = {"D", "B", "E", "A", "F", "C", "G"};
     assert (Arrays.equals(sut.inOrderTraversal(), test));
   }
+
+  @Test
+  void test_max() {
+    BinaryTree<Integer> sut = new BinaryTree<>();
+    Node<Integer> a = new Node<>(2);
+    Node<Integer> b = new Node<>(7);
+    Node<Integer> c = new Node<>(5);
+    Node<Integer> d = new Node<>(2);
+    Node<Integer> e = new Node<>(6);
+    Node<Integer> g = new Node<>(5);
+    Node<Integer> i = new Node<>(4);
+    //              (2)
+    //             /   \
+    //          (7)     (5)
+    //         /   \       \
+    //       (2)  (6)      (9)
+    //           /   \     /
+    //          (5) (11) (4)
+    a.left = b;
+    a.right = c;
+    b.left = d;
+    b.right = e;
+    e.left = g;
+    sut.root = a;
+    assertEquals(sut.max(), 7);
+  }
 }

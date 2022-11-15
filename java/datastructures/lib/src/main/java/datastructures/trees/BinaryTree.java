@@ -1,8 +1,9 @@
 package datastructures.trees;
+import datastructures.StackandQueue.Queue;
 
 import java.util.ArrayList;
 
-public class BinaryTree<T> {
+public class BinaryTree<T extends Comparable<? super T>> {
 
   public Node<T> root;
 
@@ -55,4 +56,24 @@ public class BinaryTree<T> {
       postOrder(list, root.right);
     list.add(root.value);
   }
+
+  public T max() {
+    if (root == null)
+      throw new IllegalArgumentException();
+    Queue<Node<T>> queue = new Queue<>();
+    queue.enqueue((Node<T>) root);
+    T max = (T) root.value;
+    while(!queue.isEmpty()) {
+      Node<T> temp = queue.dequeue();
+      if (temp.value.compareTo(max) > 0)
+        max = temp.value;
+      if ( temp.left != null)
+        queue.enqueue(temp.left);
+      if (temp.right != null)
+        queue.enqueue(temp.right);
+    }
+    return max;
+  }
+
+
 }
