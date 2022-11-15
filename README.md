@@ -46,3 +46,5 @@ To run your tests
 
 [Bracket Checker](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/Bracket.md)
 
+[Trees](https://github.com/Mehtab228/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/trees)
+
