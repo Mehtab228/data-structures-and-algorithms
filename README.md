@@ -50,3 +50,5 @@ To run your tests
 
 [Find Max of Tree](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/FindMax.md)
 
+[Breadth First Search](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/BreadthFirst.md)
+
