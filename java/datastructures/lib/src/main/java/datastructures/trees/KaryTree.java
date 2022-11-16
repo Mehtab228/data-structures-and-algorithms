@@ -30,4 +30,38 @@ public class KaryTree<T extends Comparable<T>> {
       }
     }
   }
+
+  public KaryTree<String> fizzBuzz(KaryTree<Integer> tree) {
+    if (tree.root == null)
+      throw new IllegalArgumentException();
+    KaryNode<String> outputRoot = new KaryNode<>();
+    outputRoot.value = getFizzBuzzValue(tree.root.value);
+    buildStringTree(outputRoot, tree.root);
+    return new KaryTree<String>(outputRoot);
+  }
+
+
+  private void buildStringTree(KaryNode<String> outNode, KaryNode<Integer> inNode) {
+    if (!inNode.childList.isEmpty()) {
+      for (KaryNode<Integer> node : inNode.childList) {
+        KaryNode<String> temp = new KaryNode<>();
+        temp.value = getFizzBuzzValue(node.value);
+        outNode.childList.add(temp);
+        buildStringTree(temp, node);
+      }
+    }
+  }
+
+  private String getFizzBuzzValue(Integer inputValue) {
+    if (inputValue < 3)
+      return inputValue.toString();
+    else if (inputValue % 3 == 0 && inputValue % 5 == 0)
+      return "FizzBuzz";
+    else if (inputValue % 3 == 0)
+      return "Fizz";
+    else if (inputValue % 5 == 0)
+      return "Buzz";
+    else
+      return inputValue.toString();
+  }
 }
