@@ -223,19 +223,20 @@ public class TreeTests {
   }
   @Test
   void test_addchild_single() {
-    KaryNode<String> a = new KaryNode<>("root");
-    KaryNode<String> b = new KaryNode<>("root child");
+    KaryNode<String> a = new KaryNode<>("test");
+    KaryNode<String> b = new KaryNode<>("test1");
     KaryTree<String> sut = new KaryTree<>();
     a.addChild(b);
+    a.addChild(a);
     sut.root = a;
-    assertEquals(sut.root.childList.size(), 1);
+    assertEquals(sut.root.childList.size(), 2);
     assertTrue(sut.root.childList.contains(b));
   }
   @Test
   void test_constructor() {
-    KaryNode<String> a = new KaryNode<>("hello");
+    KaryNode<String> a = new KaryNode<>("Batman");
     KaryTree<String> sut = new KaryTree<>();
     sut.root = a;
-    assertEquals(sut.root.value, "hello");
+    assertEquals(sut.root.value, "Batman");
   }
 }
