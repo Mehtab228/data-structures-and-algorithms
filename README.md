@@ -52,3 +52,4 @@ To run your tests
 
 [Breadth First Search](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/BreadthFirst.md)
 
+[K-ary Tree](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/kary.md)
