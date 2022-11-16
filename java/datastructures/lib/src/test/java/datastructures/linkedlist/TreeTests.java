@@ -2,8 +2,10 @@ package datastructures.linkedlist;
 
 import datastructures.trees.BinarySearchTree;
 import datastructures.trees.BinaryTree;
+import datastructures.trees.KaryNode;
 import datastructures.trees.Node;
 import org.junit.jupiter.api.Test;
+import datastructures.trees.KaryTree;
 
 import java.util.Arrays;
 
@@ -218,5 +220,22 @@ public class TreeTests {
     //       (C)  (D) (F)  (G)
     String [] test = {"A", "B"};
     assertArrayEquals(test, sut.breadthFirstTraversal());
+  }
+  @Test
+  void test_addchild_single() {
+    KaryNode<String> a = new KaryNode<>("root");
+    KaryNode<String> b = new KaryNode<>("root child");
+    KaryTree<String> sut = new KaryTree<>();
+    a.addChild(b);
+    sut.root = a;
+    assertEquals(sut.root.childList.size(), 1);
+    assertTrue(sut.root.childList.contains(b));
+  }
+  @Test
+  void test_constructor() {
+    KaryNode<String> a = new KaryNode<>("hello");
+    KaryTree<String> sut = new KaryTree<>();
+    sut.root = a;
+    assertEquals(sut.root.value, "hello");
   }
 }
