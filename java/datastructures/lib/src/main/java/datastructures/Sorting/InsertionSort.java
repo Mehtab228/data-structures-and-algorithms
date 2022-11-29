@@ -1,7 +1,7 @@
 package datastructures.Sorting;
 
 public class InsertionSort {
-  public void insertionSort(int[] arr) {
+  public void insertSort(int[] arr) {
     for (int i = 1; i < arr.length; i++) {
       int j = i - 1;
       int temp = arr[i];
