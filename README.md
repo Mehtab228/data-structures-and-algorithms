@@ -59,4 +59,7 @@ To run your tests
 [Merge Sort blog](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/Sorting/MergeSortBlog.md)
 
 [Hash Map](https://github.com/Mehtab228/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/hashmap)
+
 [Hash Map Test](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/test/java/datastructures/linkedlist/HashMapTests.java)
+
+[Hashmap First repeating word](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/hashmap/HashMapReturnFirstRepeated.java)
