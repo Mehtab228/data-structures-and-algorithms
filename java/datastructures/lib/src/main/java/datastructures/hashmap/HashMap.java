@@ -1,5 +1,8 @@
 package datastructures.hashmap;
 
+import datastructures.linkedlist.Node;
+
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -10,7 +13,7 @@ public class HashMap<K, V> {
   int size;
 
   //CONSTRUCTOR
-  public HashMap(int size){
+  public HashMap(){
     if (size < 1){
       throw new IllegalArgumentException("Size must be greater than 0.");
     }
@@ -82,5 +85,19 @@ public class HashMap<K, V> {
 
   private int hash(K key){
     return Math.abs(key.hashCode()) % size;
+  }
+
+  public boolean contains(K key) {
+    int index = hash(key);
+    if (bucketArrList.get(index) != null) {
+      LinkedList<HashMapPair<K, V>> list = bucketArrList.get(index);
+      Node<HashMapPair<K, V>> current;
+      current = new Node<>("");
+      while (current != null && !current.equals(key)) {
+        current = current.next;
+      }
+      return current != null;
+    }
+    return false;
   }
 }
