@@ -11,6 +11,8 @@ public class HashMap<K, V> {
   //FIELDS
   ArrayList<LinkedList<HashMapPair<K, V>>> bucketArrList;
   int size;
+  int capacity;
+
 
   //CONSTRUCTOR
   public HashMap(){
