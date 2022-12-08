@@ -23,6 +23,7 @@ public class LinkedList<T> {
     }
     return false;
   }
+
   @Override
   public String toString() {
     String output = "";
@@ -104,15 +105,15 @@ public class LinkedList<T> {
       return;
     }
     Node current = head;
-    while(current.next != null) {
-      if(current.next.value.equals(value)) {
+    while (current.next != null) {
+      if (current.next.value.equals(value)) {
         current.next = (current.next.next);
         size--;
         return;
       }
       current = current.next;
     }
-    if(current.value.equals(value))
+    if (current.value.equals(value))
       current = null;
     else
       throw new IllegalArgumentException(value + " not found in list");
