@@ -63,3 +63,5 @@ To run your tests
 [Hash Map Test](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/test/java/datastructures/linkedlist/HashMapTests.java)
 
 [Hashmap First repeating word](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/FindFirstRepeatingWord.md)
+
+[Left Join](https://github.com/Mehtab228/data-structures-and-algorithms/blob/main/java/datastructures/LeftJoin.md)
