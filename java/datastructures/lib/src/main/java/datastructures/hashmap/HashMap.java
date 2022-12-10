@@ -15,17 +15,21 @@ public class HashMap<K, V> {
 
 
   //CONSTRUCTOR
-  public HashMap(){
-    if (size < 1){
+  public HashMap(int size){
+    if (this.size < 1){
       throw new IllegalArgumentException("Size must be greater than 0.");
     }
-    this.size = size;
-    this.bucketArrList = new ArrayList<>(size);
+    this.size = this.size;
+    this.bucketArrList = new ArrayList<>(this.size);
 
     for (int i = 0; i < this.size; i++)
     {
       bucketArrList.add(i, new LinkedList<>());
     }
+  }
+
+  public HashMap() {
+
   }
 
   //METHODS

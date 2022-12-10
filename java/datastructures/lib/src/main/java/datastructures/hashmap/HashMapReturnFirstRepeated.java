@@ -3,7 +3,7 @@ package datastructures.hashmap;
 public class HashMapReturnFirstRepeated {
 
   public String getFirstRepeatedWord(String str) {
-    HashMap<String, Boolean> hashmap = new HashMap<>();
+    HashMap<String, Boolean> hashmap = new HashMap<>(size);
     String current = "";
     for (int i = 0; i < str.length(); i++) {
       char c = Character.toLowerCase(str.charAt(i));
